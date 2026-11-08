@@ -1,0 +1,341 @@
+{
+  "LastModified": "2026-10-05T17:34:19.5449255Z",
+  "Saves": {
+    "Characters": [
+      {
+        "$type": "CharacterSave",
+        "Characters": [
+          {
+            "Id": 1,
+            "Name": "Aragorn",
+            "Hp": 94,
+            "Power": 65
+          },
+          {
+            "Id": 2,
+            "Name": "Gandalf",
+            "Hp": 39,
+            "Power": 25
+          },
+          {
+            "Id": 3,
+            "Name": "Legolas",
+            "Hp": 76,
+            "Power": 57
+          }
+        ],
+        "Abilities": [
+          {
+            "Id": 1,
+            "Name": "Firestrike",
+            "Damage": 45,
+            "Heal": 0,
+            "Description": "Unleashes blazing flames on the enemy"
+          },
+          {
+            "Id": 2,
+            "Name": "HolyLight",
+            "Damage": 0,
+            "Heal": 40,
+            "Description": "Blesses target with divine healing energy"
+          },
+          {
+            "Id": 3,
+            "Name": "PiercingArrow",
+            "Damage": 55,
+            "Heal": 0,
+            "Description": "Fires a deadly arrow that ignores defenses"
+          }
+        ],
+        "Items": [
+          {
+            "Id": 1,
+            "Name": "Excalibur",
+            "HpMod": 20,
+            "PowerMod": 35
+          },
+          {
+            "Id": 2,
+            "Name": "Aegis_Shield",
+            "HpMod": 60,
+            "PowerMod": 5
+          },
+          {
+            "Id": 3,
+            "Name": "Elixir_of_Vitality",
+            "HpMod": 100,
+            "PowerMod": 0
+          },
+          {
+            "Id": 4,
+            "Name": "Elven_Bow",
+            "HpMod": 10,
+            "PowerMod": 25
+          }
+        ],
+        "CharacterItems": [
+          {
+            "Id": 1,
+            "CharacterId": 1,
+            "ItemId": 1
+          },
+          {
+            "Id": 2,
+            "CharacterId": 2,
+            "ItemId": 2
+          },
+          {
+            "Id": 3,
+            "CharacterId": 3,
+            "ItemId": 4
+          }
+        ],
+        "CharacterAbilities": [
+          {
+            "Id": 1,
+            "CharacterId": 1,
+            "AbilityId": 1
+          },
+          {
+            "Id": 2,
+            "CharacterId": 2,
+            "AbilityId": 1
+          },
+          {
+            "Id": 3,
+            "CharacterId": 2,
+            "AbilityId": 2
+          },
+          {
+            "Id": 4,
+            "CharacterId": 3,
+            "AbilityId": 3
+          }
+        ],
+        "SaveName": "battle_checkpoint_1",
+        "LastModified": "2026-10-05T17:34:16.4614357Z"
+      }
+    ],
+    "Text": [
+      {
+        "$type": "TextSave",
+        "TextRoot": {
+          "Id": 1,
+          "Name": "OOP_Architecture_Guide",
+          "Rank": 0,
+          "Children": [
+            {
+              "$type": "Heading",
+              "Id": 2,
+              "Name": "1. Architectural Layers",
+              "Rank": 1,
+              "Children": [
+                {
+                  "$type": "Paragraph",
+                  "Id": 3,
+                  "Content": "Modern software architecture strictly separates domain logic from infrastructural concerns.",
+                  "Name": "Paragraph #3"
+                },
+                {
+                  "$type": "Link",
+                  "Id": 4,
+                  "Text": "Clean Architecture Reference",
+                  "Url": "https://martinfowler.com/articles/dipInTheWild.html",
+                  "Name": "Clean Architecture Reference"
+                },
+                {
+                  "$type": "Heading",
+                  "Id": 5,
+                  "Name": "1.1 Data Transfer Objects",
+                  "Rank": 2,
+                  "Children": [
+                    {
+                      "$type": "Paragraph",
+                      "Id": 6,
+                      "Content": "DTOs encapsulate formatting and transport concerns, preventing presentation leaks into Core.",
+                      "Name": "Paragraph #6"
+                    },
+                    {
+                      "$type": "Image",
+                      "Id": 7,
+                      "AltText": "DTO Architecture Diagram",
+                      "SourceUrl": "https://example.org/dto-diagram.png",
+                      "Name": "DTO Architecture Diagram"
+                    },
+                    {
+                      "$type": "Paragraph",
+                      "Id": 10,
+                      "Content": "DTO serialization ensures lightweight data delivery between system boundaries.",
+                      "Name": "Paragraph #10"
+                    },
+                    {
+                      "$type": "Link",
+                      "Id": 11,
+                      "Text": "DTO Pattern Documentation",
+                      "Url": "https://learn.microsoft.com/dotnet/architecture/",
+                      "Name": "DTO Pattern Documentation"
+                    }
+                  ],
+                  "ParentId": 2
+                },
+                {
+                  "$type": "Heading",
+                  "Id": 12,
+                  "Name": "1.2 Infrastructure Inversion",
+                  "Rank": 2,
+                  "Children": [
+                    {
+                      "$type": "Paragraph",
+                      "Id": 13,
+                      "Content": "Infrastructure depends on core domain contracts through interfaces, guaranteeing testability.",
+                      "Name": "Paragraph #13"
+                    }
+                  ],
+                  "ParentId": 2
+                }
+              ],
+              "ParentId": 1
+            },
+            {
+              "$type": "Heading",
+              "Id": 8,
+              "Name": "2. Persistence with Repository",
+              "Rank": 1,
+              "Children": [
+                {
+                  "$type": "Paragraph",
+                  "Id": 9,
+                  "Content": "The repository pattern abstracts JSON serialization away from business operations.",
+                  "Name": "Paragraph #9"
+                }
+              ],
+              "ParentId": 1
+            }
+          ],
+          "ParentId": null
+        },
+        "Nodes": [
+          {
+            "Id": 1,
+            "ParentId": null,
+            "NodeType": "Root",
+            "Name": "OOP_Architecture_Guide",
+            "Content": "",
+            "Rank": 0,
+            "Extra": null
+          },
+          {
+            "Id": 2,
+            "ParentId": 1,
+            "NodeType": "Heading",
+            "Name": "1. Architectural Layers",
+            "Content": "",
+            "Rank": 1,
+            "Extra": null
+          },
+          {
+            "Id": 3,
+            "ParentId": 2,
+            "NodeType": "Paragraph",
+            "Name": "Paragraph #3",
+            "Content": "Modern software architecture strictly separates domain logic from infrastructural concerns.",
+            "Rank": 2,
+            "Extra": null
+          },
+          {
+            "Id": 4,
+            "ParentId": 2,
+            "NodeType": "Link",
+            "Name": "Clean Architecture Reference",
+            "Content": "https://martinfowler.com/articles/dipInTheWild.html",
+            "Rank": 2,
+            "Extra": null
+          },
+          {
+            "Id": 5,
+            "ParentId": 2,
+            "NodeType": "Heading",
+            "Name": "1.1 Data Transfer Objects",
+            "Content": "",
+            "Rank": 2,
+            "Extra": null
+          },
+          {
+            "Id": 6,
+            "ParentId": 5,
+            "NodeType": "Paragraph",
+            "Name": "Paragraph #6",
+            "Content": "DTOs encapsulate formatting and transport concerns, preventing presentation leaks into Core.",
+            "Rank": 3,
+            "Extra": null
+          },
+          {
+            "Id": 7,
+            "ParentId": 5,
+            "NodeType": "Image",
+            "Name": "DTO Architecture Diagram",
+            "Content": "https://example.org/dto-diagram.png",
+            "Rank": 3,
+            "Extra": null
+          },
+          {
+            "Id": 10,
+            "ParentId": 5,
+            "NodeType": "Paragraph",
+            "Name": "Paragraph #10",
+            "Content": "DTO serialization ensures lightweight data delivery between system boundaries.",
+            "Rank": 3,
+            "Extra": null
+          },
+          {
+            "Id": 11,
+            "ParentId": 5,
+            "NodeType": "Link",
+            "Name": "DTO Pattern Documentation",
+            "Content": "https://learn.microsoft.com/dotnet/architecture/",
+            "Rank": 3,
+            "Extra": null
+          },
+          {
+            "Id": 12,
+            "ParentId": 2,
+            "NodeType": "Heading",
+            "Name": "1.2 Infrastructure Inversion",
+            "Content": "",
+            "Rank": 2,
+            "Extra": null
+          },
+          {
+            "Id": 13,
+            "ParentId": 12,
+            "NodeType": "Paragraph",
+            "Name": "Paragraph #13",
+            "Content": "Infrastructure depends on core domain contracts through interfaces, guaranteeing testability.",
+            "Rank": 3,
+            "Extra": null
+          },
+          {
+            "Id": 8,
+            "ParentId": 1,
+            "NodeType": "Heading",
+            "Name": "2. Persistence with Repository",
+            "Content": "",
+            "Rank": 1,
+            "Extra": null
+          },
+          {
+            "Id": 9,
+            "ParentId": 8,
+            "NodeType": "Paragraph",
+            "Name": "Paragraph #9",
+            "Content": "The repository pattern abstracts JSON serialization away from business operations.",
+            "Rank": 2,
+            "Extra": null
+          }
+        ],
+        "SaveName": "article_v1",
+        "LastModified": "2026-10-05T17:34:19.5446027Z"
+      }
+    ]
+  }
+}

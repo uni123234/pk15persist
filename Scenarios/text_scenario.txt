@@ -1,0 +1,57 @@
+# ========================================================
+# SCENARIO 2: STRUCTURED TEXT HIERARCHY, NAVIGATION & SAVE
+# ========================================================
+mode text
+
+# 1. Print current path in document
+pwd
+
+# 2. Print entire document with formatting
+print --whole
+
+# 3. Print Table of Contents
+print --whole --toc
+
+# 4. Print with element unique identifiers
+print --whole --id
+
+# 5. Navigate into section
+cd "1. Architectural Layers"
+pwd
+print
+
+# 6. Navigate into subsection
+cd "1.1 Data Transfer Objects"
+pwd
+print
+
+# 7. Add a new paragraph and a link to current subsection
+add leaf paragraph "DTO serialization ensures lightweight data delivery between system boundaries."
+add leaf link "DTO Pattern Documentation" "https://learn.microsoft.com/dotnet/architecture/"
+print
+
+# 8. Move up one level and add a new subsection
+up
+pwd
+add container "1.2 Infrastructure Inversion"
+cd "1.2 Infrastructure Inversion"
+add leaf paragraph "Infrastructure depends on core domain contracts through interfaces, guaranteeing testability."
+print
+
+# 9. Return to root and save document snapshot
+cd /
+pwd
+save article_v1
+
+# 10. Print whole updated document
+print --whole
+
+# 11. Delete a section
+cd "1. Architectural Layers"
+rm "1.2 Infrastructure Inversion" --force
+cd /
+print --whole
+
+# 12. Restore document from repository snapshot
+load article_v1
+print --whole

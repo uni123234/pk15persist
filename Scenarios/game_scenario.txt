@@ -1,0 +1,49 @@
+# ========================================================
+# SCENARIO 1: CHARACTERS COMBAT, INVENTORY & PERSISTENCE
+# ========================================================
+
+# 1. View seeded characters, items, and abilities
+ls char
+ls item
+ls ability
+
+# 2. Inspect a specific character DTO
+ls char 1
+
+# 3. Create a new hero and item via command arguments
+create char Legolas 110 32 0.25
+create item Elven_Bow 10 25
+create ability PiercingArrow 55 0 "Fires a deadly arrow that ignores defenses"
+
+# 4. Equip the newly created item and ability
+add Legolas Elven_Bow
+add Legolas PiercingArrow
+
+# 5. Inspect Legolas to see updated stats and DTO
+ls char Legolas
+
+# 6. Combat Simulation
+act attack Legolas Gandalf
+act ability Gandalf Aragorn --id HolyLight
+act ability Aragorn Legolas --id Firestrike
+act attack Legolas Aragorn
+
+# 7. Check state of all characters after battle
+ls char
+
+# 8. Save game state to repository
+save battle_checkpoint_1
+
+# 9. Modify state by dealing lethal damage
+act attack Aragorn Gandalf
+act attack Aragorn Gandalf
+ls char Gandalf
+
+# 10. Restore state from repository
+load battle_checkpoint_1
+
+# 11. Verify restored state
+ls char Gandalf
+
+# 12. Switch to text subsystem
+switch
